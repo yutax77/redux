@@ -657,7 +657,7 @@ We want to mark these notifications as read whenever our `<NotificationsList>` c
 ```tsx title="features/notifications/NotificationsList.tsx"
 // highlight-start
 import { useLayoutEffect } from 'react'
-import classnames from 'classnames'
+import classNames from 'classnames'
 // highlight-end
 import { useAppSelector, useAppDispatch } from '@/app/hooks'
 
@@ -684,7 +684,7 @@ export const NotificationsList = () => {
 
   const renderedNotifications = notifications.map(notification => {
     // highlight-start
-    const notificationClassname = classnames('notification', {
+    const notificationClassname = classNames('notification', {
       new: notification.isNew
     })
     // highlight-end
