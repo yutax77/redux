@@ -741,7 +741,6 @@ import {
 
 export const Navbar = () => {
   const dispatch = useAppDispatch()
-  const username = useAppSelector(selectCurrentUsername)
   const user = useAppSelector(selectCurrentUser)
 
   // highlight-start
